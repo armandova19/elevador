@@ -5,22 +5,15 @@ var puerta_estado;//0 equivale a cerrado y 1 equivale a abierto
 
 
 function subir_piso(){
-    if(puerta_estado=0){//0 equivale a cerrado
-        if(piso_act<pisos_totales){
-            piso_act++;            
-        }
+     if(piso_act<pisos_totales){
+        piso_act++;            
     }
 }
 
 function bajar_piso(){
-    if(puerta_estado==1){
-        console.log("cerrar puerta");
-    }
-    else if(puerta_estado==0){
-        if(piso_act<=pisos_totales){
+    if(piso_act<=pisos_totales){
             piso_act--;
         }
-    }
 }
 
 function ir_piso(){
